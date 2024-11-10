@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "penguinmod",
+	"id": "penguin",
 	"version": "${version}",
 	"name": "Penguin Mod",
 	"description": "This is a penguin mod for my series",
