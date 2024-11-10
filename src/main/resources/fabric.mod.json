@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "penguinmod",
+	"version": "${version}",
+	"name": "Penguin Mod",
+	"description": "This is a penguin mod for my series",
+	"authors": [
+		"VividMedia"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Vivid-Media/penguinMinecraftMod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/penguinmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.maya.penguins.PenguinMod"
+		],
+		"fabric-datagen": [
+			"com.maya.penguins.PenguinModDataGenerator"
+		],
+		"client": [
+			"com.maya.penguins.PenguinModClient"
+		]
+	},
+	"mixins": [
+		"penguinmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
