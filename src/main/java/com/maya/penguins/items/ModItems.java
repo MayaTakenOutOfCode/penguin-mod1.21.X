@@ -12,6 +12,7 @@ public class ModItems {
 
     public static final Item PENGUIN_SPAWN_EGG = registerItem("penguin_spawn_egg", new Item(new Item.Settings()));
     public static final Item PENGUIN_FEATHER = registerItem("penguin_feather", new Item(new Item.Settings()));
+    public static final Item SHRIMP = registerItem("shrimp", new Item(new Item.Settings()));
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(PenguinMod.MOD_ID, name), item);
     }
@@ -24,6 +25,9 @@ public class ModItems {
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(PENGUIN_FEATHER);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
+            entries.add(SHRIMP);
         });
     }
 }
